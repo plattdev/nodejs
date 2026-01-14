@@ -3,7 +3,7 @@
 // importación del módulo os
 const so = require("node:os"); //esto está bien, porque le decimos a nodejs
 
-//esto ya está modularizado,viene con node, paquetes de dentr de node, luego hay paquetes externos que se instalan con npm
+//esto ya está modularizado,viene con node, paquetes de dentro de node, luego hay paquetes externos que se instalan con npm
 
 //que cargue en memoria un modulo ya creado por nodejs
 //que sistema operativo estoy usando
