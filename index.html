@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcU</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!-- Cada vez que un usuario refresque la pestaña (window), cambiarán 2 números random del 0 al 100  con los cuales se harán operaciones de +-*/ cuando cliquen los 4 botones + - * / -->
+
+    <main class="calculator">
+      <!-- Título -->
+      <h1 class="calculator__title">Números Aleatorios</h1>
+
+      <!-- Números aleatorios -->
+      <section class="calculator__random-numbers">
+        <span
+          class="calculator__random-number calculator__random-number--left"
+          id="numIzq"
+        ></span>
+        <span
+          class="calculator__random-number calculator__random-number--right"
+          id="numDer"
+        ></span>
+      </section>
+
+      <!-- Botón de nuevos números aleatorios -->
+      <button
+        class="calculator__button calculator__button--new"
+        id="btnNuevosNumeros"
+      >
+        Generar nuevos
+      </button>
+
+      <!-- Resultado + - -->
+      <section class="calculator__results calculator__results--sum-sub">
+        <span
+          class="calculator__result calculator__result--sum"
+          id="resultadoSuma"
+        ></span>
+        <span
+          class="calculator__result calculator__result--sub"
+          id="resultadoResta"
+        ></span>
+      </section>
+
+      <!-- Botones de + - -->
+      <section class="calculator__buttons calculator__buttons--sum-sub">
+        <button
+          class="calculator__button calculator__button--sum"
+          id="btnSumar"
+        >Sumar
+        </button>
+
+        <button
+          class="calculator__button calculator__button--sub"
+          id="btnRestar"
+        >Restar
+        </button>
+        
+      </section>
+
+      <!-- Resultado * / -->
+      <section class="calculator__results calculator__results--mul-div">
+        <span
+          class="calculator__result calculator__result--mul"
+          id="resultadoMulti"
+        ></span>
+        <span
+          class="calculator__result calculator__result--div"
+          id="resultadoDiv"
+        ></span>
+      </section>
+
+      <!-- Botones de * / -->
+      <section class="calculator__buttons calculator__buttons--mul-div">
+        <button
+          class="calculator__button calculator__button--mul"
+          id="btnMultiplicar"
+        >
+          Multiplicar
+        </button>
+        <button
+          class="calculator__button calculator__button--div"
+          id="btnDividir"
+        >
+          Dividir
+        </button>
+      </section>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

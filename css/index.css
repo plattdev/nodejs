@@ -1,0 +1,70 @@
+/* Importar normalize.css desde CDNJS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para index.js */
+.calculator {
+    height: 100dvh;
+    padding: 30px;
+
+    /* GRID 7 / 1 (7 rows, 1 column) */
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.calculator__title {
+}
+.calculator__random-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.calculator__random-number {
+}
+.calculator__random-number--left {
+}
+.calculator__random-number--right {
+}
+.calculator__button {
+}
+.calculator__button--new {
+}
+.calculator__results {
+}
+.calculator__results--sum-sub {
+}
+.calculator__result {
+}
+.calculator__result--sum {
+}
+.calculator__result--sub {
+}
+.calculator__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.calculator__buttons--sum-sub {
+}
+.calculator__button--sum {
+}
+.calculator__button--sub {
+}
+.calculator__results--mul-div {
+}
+.calculator__result--mul {
+}
+.calculator__result--div {
+}
+.calculator__buttons--mul-div {
+}
+.calculator__button--mul {
+}
+.calculator__button--div {
+}
