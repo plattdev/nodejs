@@ -67,7 +67,7 @@ btnMultiplicar.addEventListener("click", () => {
 
 btnDividir.addEventListener("click", () => {
   try {
-    const resultado = divide(aleatorioIzq, aleatorioDer);
+    const resultado = divide(aleatorioIzq, aleatorioDer).toFixed(2);
     resultadoDiv.textContent = resultado;
   } catch (error) {
     resultadoDiv.textContent = error.message;
