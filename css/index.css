@@ -1,32 +1,42 @@
 /* Importar normalize.css desde CDNJS */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Estilos para index.js */
 .calculator {
-    height: 100dvh;
-    padding: 30px;
+  height: 100dvh;
+  padding: 30px;
 
-    /* GRID 7 / 1 (7 rows, 1 column) */
-    display: grid;
-    grid-template-columns: 100%;
+  /* GRID 7 / 1 (7 rows, 1 column) */
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .calculator__title {
 }
 .calculator__random-numbers {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .calculator__random-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  background: #f3f3f3;
+  border-radius: 8px;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 .calculator__random-number--left {
 }
@@ -47,8 +57,8 @@
 .calculator__result--sub {
 }
 .calculator__buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .calculator__buttons--sum-sub {
 }
