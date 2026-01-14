@@ -22,7 +22,7 @@ const btnDividir = document.getElementById("btnDividir");
 
 // Si no tuvieramos funciones importadas, podríamos hacer una clase calculadora con los métodos de sumar, restar, multiplicar y dividir dentro, pero no hacer así porque ya tenemos las funciones en function.mjs
 
-// Genera y muestra dos números aleatorios en los spans correspondientes numIzq y numDer cuando se carga la página (el window)
+// Genera la funcion que muestra dos números aleatorios en los spans correspondientes numIzq y numDer cuando se carga la página (el window)
 function generarNumerosAleatorios() {
   const n1 = Math.floor(Math.random() * 101);
   const n2 = Math.floor(Math.random() * 101);
@@ -30,6 +30,16 @@ function generarNumerosAleatorios() {
   numDer.textContent = n2;
   return { n1, n2 };
 }
+
+// Al hacer clic en el botón, generar nuevos números aleatorios
+btnNuevosNumeros.addEventListener("click", () => {
+  numeros = generarNumerosAleatorios();
+  // Limpiar resultados
+  resultadoSuma.textContent = "";
+  resultadoResta.textContent = "";
+  resultadoMulti.textContent = "";
+  resultadoDiv.textContent = "";
+});
 
 // Inicializar los números cuando el DOM esté listo
 let numeros;
@@ -53,17 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   btnDividir.addEventListener("click", () => {
-    const resultado = divide(numeros.n1, numeros.n2);
-    resultadoDiv.textContent = resultado;
+    try {
+      const resultado = divide(numeros.n1, numeros.n2);
+      resultadoDiv.textContent = resultado;
+    } catch (error) {
+      resultadoDiv.textContent = error.message;
+    }
   });
 });
 
-// Al hacer clic en el botón, generar nuevos números
-btnNuevosNumeros.addEventListener("click", () => {
-  numeros = generarNumerosAleatorios();
-  // Limpiar resultados
-  resultadoSuma.textContent = "";
-  resultadoResta.textContent = "";
-  resultadoMulti.textContent = "";
-  resultadoDiv.textContent = "";
-});
