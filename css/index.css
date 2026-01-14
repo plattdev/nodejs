@@ -18,7 +18,7 @@
   grid-template-columns: 100%;
   /* dar valor fijo para que no se muevan, los 3 de arriba se autoajustan y los otros se crean fijos */
   grid-template-rows: repeat(3, auto) repeat(4, 1fr);
-  gap: 50px;
+  gap: 30px;
 }
 
 html{
@@ -37,12 +37,12 @@ html{
   gap: 30px;
 }
 .calculator__random-number {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   /* hay que hacer display block porque si no no podemos hacer el border radous */
   display: block; 
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   color: #222;
   background: #f3f3f3;
   border-radius: 50%;
