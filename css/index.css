@@ -18,7 +18,7 @@
   grid-template-columns: 100%;
   /* dar valor fijo para que no se muevan, los 3 de arriba se autoajustan y los otros se crean fijos */
   grid-template-rows: repeat(3, auto) repeat(4, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 html{

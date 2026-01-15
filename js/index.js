@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btnDividir.addEventListener("click", () => {
     try {
-      const resultado = divide(numeros.n1, numeros.n2);
+      const resultado = divide(numeros.n1, numeros.n2).toFixed(2);
       resultadoDiv.textContent = resultado;
     } catch (error) {
       resultadoDiv.textContent = error.message;
