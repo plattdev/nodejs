@@ -39,8 +39,8 @@ html{
 .calculator__random-number {
   font-size: 4rem;
   font-weight: bold;
-  /* hay que hacer display block porque si no no podemos hacer el border radous */
-  display: block; 
+  /* hay que hacer display block o display flex porque si no no podemos hacer el border radous */
+  /* display: block;  */
   width: 130px;
   height: 130px;
   color: #222;
@@ -51,10 +51,7 @@ html{
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
-.calculator__random-number--left {
-}
-.calculator__random-number--right {
-}
+
 
 .calculator__button--new {
     font-size: 1.2rem;
@@ -76,43 +73,18 @@ html{
     align-items: end;
     
 }
-.calculator__results--sum-sub {
-}
-.calculator__result {
-}
-.calculator__result--sum {
-}
-.calculator__result--sub {
-}
+
 .calculator__buttons {
   display: flex;
   justify-content: space-between;
 
 }
 .calculator__button{
-    /* para poder cogerlos */
-    align-self:center;
+    /* para poder darle menos espacio del que ocupan en el grid */
+    align-self: center;
     padding: 15px 30px;
     background-color: transparent;
     border: 4px solid #333;
     box-shadow: 7px 10px  0px #333;
     color:#333;
-}
-.calculator__buttons--sum-sub {
-}
-.calculator__button--sum {
-}
-.calculator__button--sub {
-}
-.calculator__results--mul-div {
-}
-.calculator__result--mul {
-}
-.calculator__result--div {
-}
-.calculator__buttons--mul-div {
-}
-.calculator__button--mul {
-}
-.calculator__button--div {
 }
