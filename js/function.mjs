@@ -1,3 +1,6 @@
+//hubiese sido mas logico hacer una clase con todas las funciones adentro
+//pero para practicar las exportaciones, lo hago asi
+
 export function suma(a, b) {
   return a + b
 }
